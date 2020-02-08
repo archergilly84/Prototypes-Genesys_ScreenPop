@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Genesys ID&V</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap-4.3.1.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  </head>
+  <body onLoad="createArray()">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+       <a class="navbar-brand" href="#"><img src="kisspng-genesys-customer-service-logo-company-solution-5b10ff9f513d75.3994774815278406713328.png" width="250px" height="100px"></a>
+       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+       <span class="navbar-toggler-icon"></span>
+       </button>
+       <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+             <li class="nav-item dropdown">
+                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Agent
+                </a>
+               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                   <a class="dropdown-item" href="#">Not Ready</a>
+                   <a class="dropdown-item" href="#">Lunch</a>
+                   <a class="dropdown-item" href="#">L&D</a>
+               </div>
+             </li>
+             <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fa fa-headphones"></i></a>
+             </li>
+             <li class="nav-item">
+				 <a class="nav-link" href="#"><i class="fa fa-question-circle-o"></i></a>
+             </li>
+		     <li class="nav-item">
+				 <a class="nav-link" href="#"><i class="fa fa-window-minimize"></i></a>
+             </li>
+			 <li class="nav-item">
+				 <a class="nav-link" href="#"><i class="fa fa-window-maximize"></i></a>
+             </li>
+			 <li class="nav-item">
+				 <a class="nav-link" href="#"><i class="fa fa-window-close"></i></a>
+             </li>
+          </ul>
+       </div>
+    </nav>
+    <div class="container">
+	  <div class="row">
+		<div class="col-sm-4 col-xl-6">
+			 <form>
+				<div class="form-group col-xl-12">		    
+					<label for="QuestionOne" id="questionOneLabel"><input type="checkbox" class="form-check-input" id="questionOneCheck">What is your Spouse Name?</label>
+					<input type="text" class="form-control" id="QuestionOne" value="Mellissa Jane Horner">					
+				</div>
+				<div class="form-group col-xl-12">
+					<label for="QuestionTwo" id="questionTwoLabel"><input type="checkbox" class="form-check-input" id="questionTwoCheck">What is your Registered Telephone Number?</label>
+					<input type="text" class="form-control" id="QuestionTwo" value="07891401849">
+				</div>
+				<div class="form-group col-xl-12">
+					<label for="QuestionThree" id="questionThreeLabel"><input type="checkbox" class="form-check-input" id="questionThreeCheck">What is your Current Address?</label>
+					<input type="text" class="form-control" id="QuestionThree" value="2 St Peter's Square, Manchester, M2 3AA">
+				</div>				
+			 </form>
+			<button class="btn btn-primary" onClick="verify()">Verify</button>
+		</div>		
+		<div class="col-sm-4 col-xl-6">
+			<div id="verifiedImage"></div>
+		</div>
+	</div>
+
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+    <script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/main.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed --> 
+    <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap-4.3.1.js"></script>
+  </body>
+</html>
